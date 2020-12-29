@@ -1,6 +1,9 @@
 def sumOfDigits(num):
-    digits = map(int, list(str(num)))
-    return sum(digits)
+    sum = 0
+    for c in list(str(num)):
+        sum += int(c)
+
+    return sum
 
 if __name__ == '__main__':
     print(sumOfDigits(47253))
