@@ -14,6 +14,8 @@ def compound_interest_amount(p, r, t, n):
 if __name__ == '__main__':
     # quiz 1
     # ex 1
+    print(compound_interest_amount_withoutN(3600000, 0.058, 2))
+    # ex 2
     print(compound_interest_amount_withoutN(10000000, 0.05 / 12, 12))
 
     # quiz 2
