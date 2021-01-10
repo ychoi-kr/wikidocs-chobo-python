@@ -12,14 +12,11 @@ def compound_interest_amount(p, r, t, n):
         return compound_interest_amount(p, r, t - 1 / n, n) * (1 + r / n)
 
 if __name__ == '__main__':
-    # quiz 1
-    # ex 1
-    print(compound_interest_amount_withoutN(3600000, 0.058, 2))
-    # ex 2
-    print(compound_interest_amount_withoutN(10000000, 0.05 / 12, 12))
+    print("Quiz 1")
+    print("ex 1:", compound_interest_amount_withoutN(3600000, 0.058, 2))
+    print("ex 2:", compound_interest_amount_withoutN(10000000, 0.05 / 12, 12))
 
-    # quiz 2
-    # ex 1
-    print(compound_interest_amount(1500000, 0.043, 6, 4))
-    # ex 2
-    print(compound_interest_amount(1500000, 0.043, 6, 1/2))
+    print("\nQuiz 2")
+    print("ex 1:", compound_interest_amount(1500000, 0.043, 6, 4))
+    print("ex 2:", compound_interest_amount(1500000, 0.043, 6, 1/2))
+    print("ex 3:", compound_interest_amount(3600000, 0.058, 2, 1))
