@@ -1,5 +1,5 @@
-def compound_interest_amount(P, r, n, t):
-    return int(P * (1 + r / n) ** (n * t))
+def compound_interest_amount(p, r, n, t):
+    return int(p * (1 + r / n) ** (n * t))
 
 if __name__ == '__main__':
     # ex 1
