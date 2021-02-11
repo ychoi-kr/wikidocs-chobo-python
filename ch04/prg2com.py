@@ -19,7 +19,7 @@ def sol1(inlist, coms):
 
         # 평균수행시간보다 오래 걸리는 프로그램이 있으면 그냥 컴퓨터에게 준다.
         if True in [k >= avg_time for k in _inlist]:
-            for m in _inlist:
+            for m in tuple(_inlist):
                 if m >= avg_time:                    
                     outlist[j].append(m)
                     _inlist.remove(m)
@@ -28,15 +28,23 @@ def sol1(inlist, coms):
 
         # 평균 수행시간보다 짧게 걸리는 것들은 모아서 컴퓨터에게 준다.
         else:
-            for n in range(len(_inlist)):
-                if _inlist[n] == 0:
-                    continue
-                v = _inlist[n]
-                outlist[j].append(v)
-                _inlist[n] = 0
-                sumout[j] += v
+            for n in tuple(_inlist):
+                outlist[j].append(n)
+                _inlist.remove(n)
+                sumout[j] += n
                 if sumout[j] >= avg_time:
                     break
+
+            # 아래와 같이 구현할 수도 있음
+            # for n in range(len(_inlist)):
+            #     if _inlist[n] == 0:
+            #         continue
+            #     v = _inlist[n]
+            #     outlist[j].append(v)
+            #     _inlist[n] = 0
+            #     sumout[j] += v
+            #     if sumout[j] >= avg_time:
+            #         break
     
     return outlist
 
@@ -66,6 +74,7 @@ if __name__ == '__main__':
     optimal = [[5], [3, 2]]
     print('inlist:', inlist)
     print('coms:', coms)
+    print('average:', sum(inlist) / coms)
     print('optimal:', optimal)
     print('sol1:', sol1(inlist, coms))
     print('sol2:', sol2(inlist, coms))
@@ -76,6 +85,7 @@ if __name__ == '__main__':
     optimal = [[22], [15, 6], [13, 3, 2]]
     print('inlist:', inlist)
     print('coms:', coms)
+    print('average:', sum(inlist) / coms)
     print('optimal:', optimal)
     print('sol1:', sol1(inlist, coms))
     print('sol2:', sol2(inlist, coms))
@@ -86,7 +96,20 @@ if __name__ == '__main__':
     optimal = [[11, 10], [9, 8, 7]]
     print('inlist:', inlist)
     print('coms:', coms)
+    print('average:', sum(inlist) / coms)
     print('optimal:', optimal)
     print('sol1:', sol1(inlist, coms))
     print('sol2:', sol2(inlist, coms))
+    print('===========================')
+    
+    inlist = [1, 1, 1, 2, 2, 2, 7, 8, 30, 40]
+    coms = 3
+    optimal = [[40], [30], [8, 7, 2, 2, 2, 1, 1, 1]]
+    print('inlist:', inlist)
+    print('coms:', coms)
+    print('average:', sum(inlist) / coms)
+    print('optimal:', optimal)
+    print('sol1:', sol1(inlist, coms))
+    print('sol2:', sol2(inlist, coms))
+    print('===========================')
 
