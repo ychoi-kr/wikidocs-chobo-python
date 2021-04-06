@@ -9,3 +9,5 @@ for x in glob.glob("korean_national_anthem_?.txt"):
     outfile.write(x + '\n')
     outfile.write('-' * len(x) + '\n')
     outfile.write(infile.read() + "\n\n")
+
+outfile.close()
