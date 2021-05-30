@@ -15,7 +15,7 @@ while True:
         break
     
     q = quiz.pop()
-    print("Write the following sentences in English.")
+    print("Write the following sentence in English.")
     print(q)
     a = input("\nyour answer: ")
 
