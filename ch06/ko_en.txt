@@ -1,0 +1,16 @@
+ko	en
+나는 학생이다.	I am a student.
+그녀는 내 언니이다.	She is my sister.
+그녀는 행복하다.	She is happy.
+너는 피곤하다.	You are tired.
+너는 집에 있다.	You are home.
+그들은 교실에 있다.	They are in the classroom.
+그녀는 작가이다.	She is a writer.
+그들은 친절하다.	They are kind.
+그들은 뉴욕에 있다.	They are in New York.
+그녀는 작가가 아니다.	She is not a writer.
+그들은 친절하지 않다.	They are not kind.
+그들은 뉴욕에 있지 않다.	They are not in New York.
+그녀는 작가인가요?	Is she a writer?
+그들은 친절한가요?	Are they kind?
+그들은 뉴욕에 있나요?	Are they in New York?
