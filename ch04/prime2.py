@@ -1,13 +1,13 @@
 from math import sqrt
 
 n = int(input())
-N = list(range(2, n + 1))
+N = list(range(2, n))
 
 i = 0
-while i <= sqrt(n + 1) and len(N) > i:
+while i <= sqrt(n) and len(N) > i:
     #print('\ncheck multiple of ', N[i])
     j = i
-    while i <= j <= n + 1 and len(N) > j:
+    while i <= j <= n and len(N) > j:
         #print(f'N[{j}]: {N[j]}', end='')
         if N[j] != N[i] and N[j] % N[i] == 0:
             del N[j]
