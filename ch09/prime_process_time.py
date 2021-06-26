@@ -1,6 +1,5 @@
 import sys
 import os
-import subprocess
 import importlib
 from glob import glob
 from time import process_time
