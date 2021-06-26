@@ -10,5 +10,4 @@ def prime(n):
     print(L2)
 
 if __name__ == '__main__':
-    n = int(input())
-    prime(n)
+    prime(int(input()))
