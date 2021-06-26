@@ -5,7 +5,7 @@ from glob import glob
 from time import process_time
 
 
-N = 2 ** 11
+N = 2 ** 12
 
 sys.path.append('../ch04')
 os.chdir('../ch04')
