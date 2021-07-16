@@ -11,7 +11,7 @@ r = sr.Recognizer()
 mic = sr.Microphone()
 
 for line in lines:
-    p_ja, ja, p_en  = line.split(',')
+    hiragana, kanji, pronunciation = line.split(',')
 
     correct = None
     while not correct:
@@ -20,7 +20,7 @@ for line in lines:
         else:
             print('Let\'s try again:')
 
-        print(p_ja)
+        print(hiragana)
         input('Press Enter when you ready and then read it ...')
 
         with mic as source:
@@ -29,12 +29,12 @@ for line in lines:
         a = r.recognize_google(audio, language='ja')
         print('Your answer:', a)
 
-        if ja == a:
+        if kanji == a:
             correct = True
             print('You\'re right!')
         else:
             correct = False
-            print(p_ja, 'is pronounced', p_en)
+            print(hiragana, 'is pronounced', pronunciation)
 
     print('-' * 20)
     time.sleep(2)
