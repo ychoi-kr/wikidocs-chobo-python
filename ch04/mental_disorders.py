@@ -23,7 +23,7 @@ disorders = dict()
 
 is_eng = lambda x: 65 <= ord(x) <= 90 or 97 <= ord(x) <= 122
 
-for l in txt.split('\n'):
+for l in txt.splitlines():
     i = 0
     while not is_eng(l[i]):
         i += 1
@@ -32,3 +32,4 @@ for l in txt.split('\n'):
         disorders[ko] = en
 
 print(disorders)
+
