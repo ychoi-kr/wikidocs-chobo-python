@@ -6,6 +6,7 @@ from time import process_time
 
 
 N = 2 ** 12
+#N = 2 ** 13
 
 sys.path.append('../ch04')
 os.chdir('../ch04')
