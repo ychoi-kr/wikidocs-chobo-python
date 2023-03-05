@@ -30,8 +30,6 @@ for line in lines:
         ans = ''
         try:
             with mic as source:
-                #if not retry:
-                #    r.adjust_for_ambient_noise(source)
                 audio = r.listen(source, timeout=3, phrase_time_limit=3)
     
                 print('Recognizing...')
@@ -52,13 +50,12 @@ for line in lines:
                 print("Sorry. Let's skip this.")
                 break
 
-        finally:
-            if any([w == ans for w in kanji.split('|')]) or hiragana == ans:
-                correct = True
-                print('You\'re right!')
-            else:
-                correct = False
-                print(hiragana, 'is pronounced', pronunciation)
+        if any([w == ans for w in kanji.split('|')]) or hiragana == ans:
+            correct = True
+            print('You\'re right!')
+        else:
+            correct = False
+            print(hiragana, 'is pronounced', pronunciation)
 
     print('-' * 20)
     time.sleep(2)
