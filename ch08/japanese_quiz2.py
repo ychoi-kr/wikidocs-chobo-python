@@ -4,8 +4,8 @@ import time
 import speech_recognition as sr
 
 f = open('japanese_words2.csv', encoding='utf-8')
-lines = f.readlines()
-random.shuffle(lines)
+lines = f.readlines()[::-1]
+#random.shuffle(lines)
 
 r = sr.Recognizer()
 mic = sr.Microphone()
