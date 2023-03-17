@@ -1,3 +1,3 @@
 def numOfDigits(num):
-    return len(str(num))
+    print(len(str(num)))
 
