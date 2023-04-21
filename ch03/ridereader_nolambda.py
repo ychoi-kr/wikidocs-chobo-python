@@ -6,7 +6,7 @@ def read(text):
         templist = []
         for x in limit.split('~'):
             templist.append(x.replace('cm', ''))
-        cmmin, cmmax = tuple(templist)
+        cmmin, cmmax = templist[0], templist[1]
     elif "이상" in limit:
         cmmin = int(limit.split("cm")[0])
 
