@@ -1,24 +1,25 @@
-my_voca = """
-기차
-차박
-박쥐
-쥐구멍
-멍게
+voca = """
 게맛살
-살구
 구멍
-멍청이
-이빨
-빨대
+글라이더
+기차
 대롱
+더치페이
 롱다리
 리본
+멍게
+박쥐
 본네트
-트라이앵글
-글라이더
-더치페이
+빨대
+살구
+양심
+이빨
 이자
 자율
+주기
+쥐구멍
+차박
+트라이앵글
 """.split()
 
 init_word = '기차'
@@ -42,7 +43,7 @@ while True:
     else:
         spoken_words.append(user_input)
         my_word = None
-        for word in list(set(my_voca) - set(spoken_words)):
+        for word in list(set(voca) - set(spoken_words)):
             if word.startswith(user_input[-1]):
                 my_word = word
                 break

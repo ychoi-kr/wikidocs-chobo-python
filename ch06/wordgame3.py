@@ -1,26 +1,3 @@
-my_voca = """
-기차
-차박
-박쥐
-쥐구멍
-멍게
-게맛살
-살구
-구멍
-멍청이
-이빨
-빨대
-대롱
-롱다리
-리본
-본네트
-트라이앵글
-글라이더
-더치페이
-이자
-자율
-""".split()
-
 with open("korean_words.txt") as f:
     voca = set(f.read().split()) 
 
