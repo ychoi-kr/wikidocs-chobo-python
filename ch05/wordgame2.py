@@ -29,8 +29,8 @@ spoken_words = [init_word]
 
 
 def trans_first(word):
-    s1 = "라락란량로료리"
-    s2 = "나낙난양노뇨이"
+    s1 = "냥녀뇨니라락란래량로뢰료루리"
+    s2 = "양여요이나낙난내양노뇌뇨누이"
     tt = str.maketrans(s1, s2)
     return word[0].translate(tt) + word[1:]
 
