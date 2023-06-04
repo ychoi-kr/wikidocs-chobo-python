@@ -5,6 +5,7 @@ voca = """
 기차
 대롱
 더치페이
+도리
 롱다리
 리본
 멍게
@@ -18,6 +19,7 @@ voca = """
 자율
 주기
 쥐구멍
+차량
 차박
 트라이앵글
 """.split()
@@ -44,7 +46,7 @@ while True:
         spoken_words.append(user_input)
         my_word = None
         for word in list(set(voca) - set(spoken_words)):
-            if word.startswith(user_input[-1]):
+            if word[0] == user_input[-1]:
                 my_word = word
                 break
        
