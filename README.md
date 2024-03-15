@@ -16,16 +16,16 @@ git clone https://github.com/ychoi-kr/wikidocs-chobo-python.git
 이 저장소는 책의 각 장에 따라 구성되어 있습니다. 각 디렉터리는 해당 장에서 논의된 예제 코드와 연습문제를 포함합니다.  
 This repository is organized according to the chapters in the book. Each directory corresponds to a chapter and contains the example codes and exercises discussed in that chapter.
 
-- `Chapter_01/`: 파이썬 시작하기 (Getting Started with Python)
-- `Chapter_02/`: 제어 구조 (Control Structures)
-- `Chapter_03/`: 함수 (Functions)
-- `Chapter_04/`: 데이터 타입 (Data Types)
-- `Chapter_05/`: 모듈 (Modules)
-- `Chapter_06/`: 파일 (Files)
-- `Chapter_07/`: 객체지향 (Object-Oriented Programming)
-- `Chapter_08/`: 예외 (Exceptions)
-- `Chapter_09/`: 테스팅과 성능 (Testing and Performance)
-- `Appendix_A/`: 부록 (Appendices)
+- `ch01/`: 파이썬 시작하기 (Getting Started with Python)
+- `ch02/`: 제어 구조 (Control Structures)
+- `ch03/`: 함수 (Functions)
+- `ch04/`: 데이터 타입 (Data Types)
+- `ch05/`: 모듈 (Modules)
+- `ch06/`: 파일 (Files)
+- `ch07/`: 객체지향 (Object-Oriented Programming)
+- `ch08/`: 예외 (Exceptions)
+- `ch09/`: 테스팅과 성능 (Testing and Performance)
+- `ch10/`: 부록 (Appendices)
 
 ## 사전 요구사항 (Prerequisites)
 
