@@ -32,8 +32,10 @@ This repository is organized according to the chapters in the book. Each directo
 예제를 실행하려면 다음이 필요합니다.  
 To run these examples, you will need:
 
-- Python 3.x가 여러분의 기기에 설치되어 있어야 합니다. Python은 [공식 웹사이트](https://www.python.org/downloads/)에서 다운로드할 수 있습니다.
-- 명령줄 인터페이스(CLI) 또는 터미널 명령에 대한 기본적인 이해.
+- Python 3.x가 여러분의 기기에 설치되어 있어야 합니다. Python은 [공식 웹사이트](https://www.python.org/downloads/)에서 다운로드할 수 있습니다.  
+    Python 3.x installed on your device. You can download Python from the [official website](https://www.python.org/downloads/).
+- 명령줄 인터페이스(CLI) 또는 터미널 명령에 대한 기본적인 이해.  
+    A basic understanding of command-line interfaces (CLI) or terminal commands.
 
 ## 예제 실행하기 (Running the Examples)
 
