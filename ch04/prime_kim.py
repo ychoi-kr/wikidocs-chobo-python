@@ -1,7 +1,8 @@
 # written by kim
 
 def prime(n):
-    L = L2 = list(range(2, n + 1))
+    L = list(range(2, n + 1))
+    L2 = L[:]
 
     for p in L:
         if p in L2:
